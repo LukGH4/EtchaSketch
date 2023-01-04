@@ -53,11 +53,13 @@
     background-color: aquamarine;
     justify-content: center;
     padding-bottom: clamp(5px, 30vh, 300px);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .div-container .start-box {
-    width: 640px;
-    height: 640px;
+    width: clamp(5px, 90vmin, 640px);
+    height: clamp(5px, 90vmin, 640px);
     background-color: white;
 }
 
