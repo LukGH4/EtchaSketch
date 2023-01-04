@@ -24,10 +24,10 @@ function generateSquares () {
     for (let i = 0; i < numSquares; i++) {
         for (let j = 0; j < numSquares; j++){
             const currDiv = document.querySelector(`.row-${i} .col-${j}`);
-            currDiv.addEventListener('mousemove', () => {
+            currDiv.onmousemove = () => {
                 let passPercent = 90;
                 currDiv.style.filter += `brightness(${passPercent}%)`
-            });
+            }
         }
     }
 }
