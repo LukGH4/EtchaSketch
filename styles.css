@@ -52,6 +52,7 @@
     display: flex;
     background-color: aquamarine;
     justify-content: center;
+    padding-bottom: clamp(5px, 30vh, 300px);
 }
 
 .div-container .start-box {
