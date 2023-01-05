@@ -10,14 +10,13 @@ function generateSquares () {
     }
     gridContainer.innerHTML = ''
     sqrSize = 640/numSquares;
-    
-    console.log(sqrSize)
+
     for (let i = 0; i < numSquares; i++){
-        gridContainer.innerHTML += `<div class='row-${i}'></div>`;
+        gridContainer.innerHTML += `<div class='row-${i} row-div'></div>`;
         let rowNum = document.querySelector(`.row-${i}`);
         for (let j = 0; j < numSquares; j++){
-            rowNum.innerHTML += `<div class='col-${j} one-div'
-            style='width:clamp(5px, 90vmin, ${sqrSize}px); height:clamp(5px, 90vmin, ${sqrSize}px);'></div>`;
+            rowNum.innerHTML += `<div class='col-${j} one-div'></div>`;
+        
         }
     }
 
